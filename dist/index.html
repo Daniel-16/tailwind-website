@@ -24,6 +24,22 @@
             <a href=""
                 class="hidden md:block px-3 py-2 text-red-600 font-medium bg-transparent border border-red-600 rounded-full hover:bg-red-700 hover:text-white hover:transition hover:duration-500">Get
                 Started</a>
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 shadow-md">
+                <a href="#hero" class="hover:text-gray-500">Home</a>
+                <a href="#features" class="hover:text-gray-500">Features</a>
+                <a href="#testimonials" class="hover:text-gray-500">Testimonials</a>
+                <a href="#" class="hover:text-gray-500">About us</a>
+            </div>
         </div>
     </nav>
     <section id="hero">
@@ -157,13 +173,14 @@
                 <li class="hover:text-gray-300"><a href="#features">Features</a></li>
                 <li class="hover:text-gray-300"><a href="#testimonials">Testimonials</a></li>
             </ul>
-            <form>
+            <form class="flex flex-row md:flex-none space-x-3">
                 <input class="p-2 rounded-full focus:outline-none placeholder:text-center" type="text"
                     placeholder="Updates in your inbox">
                 <button class="text-white p-2 w-10 bg-red-600 rounded-full hover:bg-red-700">Go</button>
             </form>
         </div>
     </footer>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
